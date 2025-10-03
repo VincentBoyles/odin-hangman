@@ -5,7 +5,9 @@ class Player
     @name = name
   end
 
-  def ask_name
-    
+  def self.ask_name
+    puts 'Enter your name: '
+    askname = gets.chomp
+    new(askname)
   end
 end
