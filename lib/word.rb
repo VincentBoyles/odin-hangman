@@ -47,17 +47,9 @@ class Word
     file = File.open('google-10000-english-no-swears.txt')
     arr = []
     while line = file.gets
-      word = arr.push(line)
-      word = word.select { |word| word.length >= 5 }
+      self.word = arr.push(line)
+      self.word = word.select { |word| word.length >= 5 }
     end
-    puts word.sample.upcase
-  end
-
-  def place_blank
-    word.length
+    self.word = word.sample.upcase
   end
 end
-
-word1 = Word.new
-word1.alphabets_info
-puts word1.display_alphabet
