@@ -4,7 +4,7 @@ require_relative 'word'
 require_relative 'alphabets'
 
 class Game
-  attr_accessor :name, :stickman, :word, :alphabets
+  attr_accessor :name, :stickman, :word, :alphabets, :guess
 
   def initialize
     puts 'Welcome to Hangman!'
@@ -13,10 +13,31 @@ class Game
     @stickman = Stickman.new
     @word = Word.new
     @alphabets = Alphabets.new
+    @guess = ''
   end
 
   def enter_guess
-    puts 'Please enter an alphabet for your guess'
+    puts 'Please enter an alphabet from above for your guess: '
+    @word.blank_word
+    self.guesss = gets.chomp.upcase
+  end
+
+  def match_guess
+    fullword = word.show_word
+    fullword.split
+    if fullword.include?(guess)
+      puts 'You got the guess right!'
+    else
+      puts 'You got the guess wrong!'
+    end
+  end
+
+  def replace_blank
+    fullword = word.show_word
+    fullword.split
+  end
+
+  def alphabets_info
     @alphabets.alphabets_info
     puts @alphabets.display_alphabet
   end
@@ -25,9 +46,9 @@ class Game
     @name.welcome
     @stickman.show_stickman
     @word.get_word
-    @word.show_word
-    @word.blank_word
-    enter_guess
+    puts @word.show_word
+    alphabets_info
+    match_guess
   end
 end
 

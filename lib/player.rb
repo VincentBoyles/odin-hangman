@@ -6,6 +6,6 @@ class Player
   end
 
   def welcome
-    puts "Welcome to Stickman! #{name}"
+    puts "Welcome to Hangman #{name}!"
   end
 end

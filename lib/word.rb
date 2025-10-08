@@ -21,6 +21,6 @@ class Word
   end
 
   def show_word
-    puts word
+    word
   end
 end
