@@ -41,4 +41,8 @@ class Alphabets
     #{alphabets[19]} #{alphabets[20]} #{alphabets[21]} #{alphabets[22]} #{alphabets[23]} #{alphabets[24]} #{alphabets[25]}
     "
   end
+
+  def remove_alphabet(alphabet)
+    @alphabets.delete(alphabet)
+  end
 end

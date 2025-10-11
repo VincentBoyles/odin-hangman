@@ -16,8 +16,7 @@ class Word
   end
 
   def blank_word
-    blanks = Array.new(word.length - 1, '_')
-    puts blanks.join(' ')
+    Array.new(word.length - 1, '_')
   end
 
   def show_word
