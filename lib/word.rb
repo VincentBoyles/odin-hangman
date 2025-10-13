@@ -20,6 +20,6 @@ class Word
   end
 
   def show_word
-    word
+    word.strip
   end
 end

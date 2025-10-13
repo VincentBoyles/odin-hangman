@@ -35,7 +35,7 @@ class Alphabets
   end
 
   def display_alphabet
-    "
+    puts "
     #{alphabets[0]} #{alphabets[1]} #{alphabets[2]} #{alphabets[3]} #{alphabets[4]} #{alphabets[5]} #{alphabets[6]} #{alphabets[7]} #{alphabets[8]} #{alphabets[9]}
     #{alphabets[10]} #{alphabets[11]} #{alphabets[22]} #{alphabets[13]} #{alphabets[14]} #{alphabets[15]} #{alphabets[16]} #{alphabets[17]} #{alphabets[18]}
     #{alphabets[19]} #{alphabets[20]} #{alphabets[21]} #{alphabets[22]} #{alphabets[23]} #{alphabets[24]} #{alphabets[25]}
