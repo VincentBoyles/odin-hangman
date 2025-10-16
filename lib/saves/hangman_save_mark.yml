@@ -1,0 +1,39 @@
+---
+:name: !ruby/object:Player
+  name: Mark
+:word: !ruby/object:Word
+  word: 'LOUISE
+
+    '
+:alphabets: !ruby/object:Alphabets
+  alphabets:
+  - Q
+  - W
+  - R
+  - T
+  - "Y"
+  - U
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - "N"
+  - M
+:blank:
+- _
+- O
+- _
+- I
+- _
+- E
+:guess: O
+:chances: 8

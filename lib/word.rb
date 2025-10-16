@@ -6,7 +6,7 @@ class Word
   end
 
   def get_word
-    file = File.open('google-10000-english-no-swears.txt')
+    file = File.open('/home/vincent/repos/odin-hangman/lib/google-10000-english-no-swears.txt')
     arr = []
     while line = file.gets
       self.word = arr.push(line)
